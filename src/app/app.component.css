@@ -1,0 +1,54 @@
+.cabeza{
+    background: rgba(0, 0, 0, 0.9);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    padding: 15px;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+ul li a{
+    font-family: 'Long Cang', cursive;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    line-height: 80px;
+    padding: 6px 13px;
+    transition: .2s;
+}
+
+ul li a.active,
+ul li a:hover{
+    background: #3498DB;
+    border-radius: 2px;
+}
+
+.show{
+    height: 160px !important;
+}
+
+.btn{
+    background-color: turquoise;
+    position: relative;
+    top: 20px;
+    font-family: 'Long Cang', cursive;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-left: 50px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+}

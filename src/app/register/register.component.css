@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(src/assets/Food.jpg);
+    background-size: 200%;
+    animation: movimiento 6s infinite linear alternate;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.capa-gradiente{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d096);
+    opacity: 0.5;
+}
+
+.formulario{
+    position: relative;
+    top: 100px;
+}
+
+.form-group{
+    margin: 20px 10px;
+}
+
+button{
+    position: relative;
+    left: 90px;
+    margin: 5px 10px 10px 10px;
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+}
+
+h2{
+    color: #3498DB;
+    font-size: 40px;
+    width: 400px;
+    left: 555px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron{
+    background: rgba(0, 0, 0, 0.3);
+    width: 400px;
+    position: relative;
+    left: 175px;
+}
+
+label{
+    color: white;
+    font-size: 17px;
+}
+::placeholder{
+    font-size: 13px;
+}

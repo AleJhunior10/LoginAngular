@@ -1,0 +1,33 @@
+<div class="fondo">
+    <div class="capa-gradiente"></div>
+    <div class="formulario">
+        <h2 class="text-center">Registrarse</h2>
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="jumbotron">
+                    <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" formControlName="name" autocomplete="off"
+                                class="form-control input-sm" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo</label>
+                            <input type="email" name="email" formControlName="email" autocomplete="off"
+                                class="form-control input-sm" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Contraseña</label>
+                            <input type="password" name="Password" formControlName="password" autocomplete="off"
+                                class="form-control input-sm" placeholder="Contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-success">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
